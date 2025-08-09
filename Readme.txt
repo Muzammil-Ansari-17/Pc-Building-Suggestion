@@ -1,34 +1,38 @@
-# 💻 MIB Computers – Interactive PC Build Guide
+MIB Computers PC Builder
+                        This is a simple console-based C++ application that helps users select a PC build based on their budget.
+                        The program provides a menu with various options, including recommendations, pre-built systems, and information about the company.
 
-Welcome to MIB Computers, a C++ console-based assistant that helps users create custom PC builds based on their budget. Whether you're an aspiring gamer or just getting into PC building, this tool recommends compatible components and walks you through every step.
+Features
+        Budget-based Recommendations: Users can input their budget, and the program will suggest a PC build with a list of components and a total price.
+        Pre-defined Builds: The application includes several pre-defined PC builds for different price ranges.
+        Company Information: A dedicated section provides details about MIB Computers, its services, and values.
+        User Reviews: Users can provide feedback and reviews on the suggested builds.
+        Interactive Interface: The program uses console commands to clear the screen and change text color for a more engaging user experience.
+        Components and Pricing
 
-## ✨ Features
+The code includes a struct PCComponent to store the name and price of various computer parts. 
+These components are categorized as:
+                                    CPU
+                                        RAM
+                                            GPU
+                                                Storage
+                                                        Motherboard
+                                                                    PSU
+                                                                        Case
+                                                                            Cooling
 
-- 🔐 User login and sign-up system
-- 💰 Budget-based build recommendations
-- 🔍 Browse components category-wise: CPU, GPU, RAM, storage, cooling, etc.
-- 📝 Leave reviews and explore alternative builds
-- 🎨 Styled terminal output with a gamer-themed interface
+The prices are hardcoded in the C++ file and are used to calculate the total price of each recommended build.
 
-## 🛠 Technologies Used
+How to Run
+Compiler: You will need a C++ compiler (like g++).
+Compile: Compile the PBS.cpp file using your compiler.
+For example:
+            g++ PBS.cpp -o pc_builder
+            Run: Execute the compiled file.
+            ./pc_builder
 
-- C++ (Windows console application)
-- `Windows.h` for styling and cursor control
-- `struct` for data organization
-- Basic I/O, `goto` navigation, loops, and conditionals
+Development
+            This project was created to demonstrate a basic interactive console application in C++.
+            The code uses windows.h for console-specific functions like changing text color,
+            which means it is intended for use on a Windows operating system.
 
-## 🚀 Getting Started
-
-Compile and run the project using any C++ compiler (recommended: Visual Studio). This app is designed for Windows platforms due to the use of specific headers like `windows.h`.
-
-## 🤝 Contributing
-
-Have suggestions or want to upgrade the UI or logic? Contributions are welcome! Open a pull request or leave a review.
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
----
-
-🔧 **Ready to assemble your rig? Dive into MIB Computers and craft your dream PC!**
